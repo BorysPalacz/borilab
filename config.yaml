@@ -2,16 +2,16 @@ baseurl: https://example.com
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
-title: Example Site
-copyright: Example Person
+title: 
+copyright: BoriLab 
 DefautContentLanguage: en-us
 languages:
     en:
         languageName: English
-        title: Example Site
+        title: Bori Lab blog
         weight: 1
         params:
-            description: Example description
+            description: BoriLab
     zh-cn:
         disabled: true
         languageName: 中文
@@ -54,7 +54,7 @@ params:
     favicon:  # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
-        since: 2020
+        since: 2022
         customText:
 
     dateFormat:
@@ -62,23 +62,23 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+       # emoji: 🍥
+        subtitle: Stories from my mechanical world
         avatar:
             enabled: true
             local: true
-            src: img/avatar.png
+            src: img/ista.png
 
     article:
         math: false
-        toc: true
+        toc: false #true
         readingTime: true
         license:
-            enabled: true
+            enabled: false #true
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: true
+        enabled: false #true
         provider: disqus
 
         disqusjs:
@@ -156,14 +156,14 @@ params:
             id:
     widgets:
         homepage:
-            - type: search
+        #    - type: search  search po lewej stronie
             - type: archives
               params:
                   limit: 5
             - type: categories
               params:
                   limit: 10
-            - type: tag-cloud
+        #    - type: tag-cloud tag po lewej stronie
               params:
                   limit: 10
         page:
@@ -203,17 +203,17 @@ menu:
     main: []
 
     social:
-        - identifier: github
-          name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
-          params:
-              icon: brand-github
+ #       - identifier: github
+  #        name: GitHub
+   #       url: https://github.com/CaiJimmy/hugo-theme-stack
+    #      params:
+     #         icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
+        - identifier: instagram
+          name: Instagram
+          url: https://instagram.com/bori.lab
           params:
-              icon: brand-twitter
+              icon: brand-instagram
 
 related:
     includeNewer: true
